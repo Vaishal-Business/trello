@@ -21,4 +21,14 @@
 <body>
   <iframe src="https://trello.com/b/cYeASlri/grade-10" allowfullscreen></iframe>
 </body>
+  <script>
+const iframe = document.querySelector('iframe');
+
+iframe.onload = () => {
+  const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+  const body = iframeDoc.querySelector('body');
+  body.setAttribute('style', 'background-image: url("https://picsum.photos/1600/1200")');
+};
+
+</script>
 </html>
